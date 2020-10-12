@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizQuestionActivity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="What country does this flag belong to?"
+            android:textSize="22sp"
+            android:textColor="#363A43"/>
+
+        <ImageView
+            android:id="@+id/imgArgentina"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/flag_argentina"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/linearProgress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:minHeight="50dp"
+                android:indeterminate="false"
+                android:progress="0"/>
+            
+            <TextView
+                android:id="@+id/txtProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:textColorHint="#7A8089"
+                tools:text="0/10"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:textColor="#7A8089"
+            tools:text="Apple"
+            android:background="@drawable/default_option_border_bg"/>
+
+        <TextView
+            android:id="@+id/txtTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:textColor="#7A8089"
+            tools:text="Google"
+            android:background="@drawable/default_option_border_bg"/>
+
+        <TextView
+            android:id="@+id/txtThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:textColor="#7A8089"
+            tools:text="Android Inc."
+            android:background="@drawable/default_option_border_bg"/>
+
+        <TextView
+            android:id="@+id/txtFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="16sp"
+            android:textColor="#7A8089"
+            tools:text="Nokia"
+            android:background="@drawable/default_option_border_bg"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
